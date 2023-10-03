@@ -1,4 +1,4 @@
-# digital-clock-js
+# Digital-clock-js
 This is a digital clock app made with html,css and javascript
 
 # Introduction
