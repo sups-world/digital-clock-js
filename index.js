@@ -13,11 +13,17 @@ function updateClock() {
     ampm = "PM";
   }
 
+  // to show 01,02 in hours
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+
   hourElement.innerText = h;
   minuteElement.innerText = m;
   secondElement.innerText = s;
   ampmElement.innerText = ampm;
 
+  //   infinite loop running every 1 second to update seconds
   setTimeout(() => {
     updateClock();
   }, 1000);
