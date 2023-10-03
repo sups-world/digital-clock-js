@@ -17,6 +17,10 @@ function updateClock() {
   minuteElement.innerText = m;
   secondElement.innerText = s;
   ampmElement.innerText = ampm;
+
+  setTimeout(() => {
+    updateClock();
+  }, 1000);
 }
 
 updateClock();
